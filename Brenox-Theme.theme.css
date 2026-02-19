@@ -42,7 +42,7 @@
   --user-popout-filter: none;
 
   /* USER MODAL */
-  --user-modal-image: url('https://clearvision.gitlab.io/images/sapphire.jpg');
+  --user-modal-image: none;
   --user-modal-position: center;
   --user-modal-size: cover;
   --user-modal-attachment: fixed;
