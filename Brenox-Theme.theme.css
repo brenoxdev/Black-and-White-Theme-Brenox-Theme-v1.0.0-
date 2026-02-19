@@ -1,0 +1,291 @@
+/**
+* @name Brenox Theme
+ * @author Brenox
+ * @version 1.0
+ * @description Minimal Glass Black Aesthetic by Brenox
+ * @source https://github.com/ClearVision/ClearVision-v7
+ */
+
+/* IMPORT CSS */
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
+
+/* SETTINGS */
+:root {
+
+  /* ACCENT COLORS (BlackVision) */
+  --main-color: #989898;
+  --hover-color: #898989;
+  --success-color: #1e63b3;
+  --danger-color: #982929;
+
+  /* STATUS COLORS */
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #982929;
+  --streaming-color: #593695;
+  --offline-color: #808080;
+
+  /* APP BACKGROUND */
+  --background-shading-percent: 100%;
+  --background-image: none;
+  --background-position: center;
+  --background-size: cover;
+  --background-attachment: fixed;
+  --background-filter: none;
+
+  /* USER POPOUT */
+  --user-popout-image: url('https://i.imgur.com/2VMaq2r.png');
+  --user-popout-position: center;
+  --user-popout-size: cover;
+  --user-popout-attachment: fixed;
+  --user-popout-filter: none;
+
+  /* USER MODAL */
+  --user-modal-image: url('https://clearvision.gitlab.io/images/sapphire.jpg');
+  --user-modal-position: center;
+  --user-modal-size: cover;
+  --user-modal-attachment: fixed;
+  --user-modal-filter: none;
+
+  /* HOME ICON */
+  --home-icon: url('https://i.imgur.com/fI2w2PI.png');
+  --home-size: 66px;
+
+  /* FONTS */
+  --main-font: 'Whitney', "gg sans", Helvetica, Arial, sans-serif;
+  --code-font: 'Consolas', monospace;
+
+  /* CHANNEL COLORS */
+  --channel-normal: var(--interactive-text-default);
+  --channel-muted: var(--interactive-muted);
+  --channel-hover: var(--interactive-text-hover);
+  --channel-selected: var(--interactive-text-active);
+  --channel-selected-bg: var(--main-color);
+  --channel-unread: var(--main-color);
+  --channel-unread-hover: var(--hover-color);
+
+  /* ACCESSIBILITY */
+  --focus-color: var(--main-color);
+}
+
+/* THEME SPECIFIC SHADING */
+
+/* LIGHT THEME */
+:is(.theme-light, .theme-dark .theme-light) {
+  --background-shading: rgba(252, 252, 252, 0.3);
+  --card-shading: rgba(252, 252, 252, 0.3);
+  --popout-shading: rgba(252, 252, 252, 0.7);
+  --modal-shading: rgba(252, 252, 252, 0.5);
+  --input-shading: rgba(0, 0, 0, 0.3);
+  --normal-text: #36363c;
+  --muted-text: #75757e;
+}
+
+/* ASH THEME */
+:is(.theme-dark, .theme-light .theme-dark) {
+  --background-shading: rgba(0, 0, 0, 0.4);
+  --card-shading: rgba(0, 0, 0, 0.2);
+  --popout-shading: rgba(0, 0, 0, 0.6);
+  --modal-shading: rgba(0, 0, 0, 0.4);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #d8d8db;
+  --muted-text: #aeaeb4;
+}
+
+/* DARK THEME */
+:is(.theme-darker, .theme-light .theme-darker) {
+  --background-shading: rgba(0, 0, 0, 0.6);
+  --card-shading: rgba(0, 0, 0, 0.3);
+  --popout-shading: rgba(0, 0, 0, 0.7);
+  --modal-shading: rgba(0, 0, 0, 0.5);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #fbfbfb;
+  --muted-text: #94949c;
+}
+
+/* ONYX THEME */
+:is(.theme-midnight, .theme-light .theme-midnight) {
+  --background-shading: rgba(0, 0, 0, 0.8);
+  --card-shading: rgba(0, 0, 0, 0.4);
+  --popout-shading: rgba(0, 0, 0, 0.8);
+  --modal-shading: rgba(0, 0, 0, 0.6);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #dcdcde;
+  --muted-text: #86868e;
+}
+
+/* ADD CUSTOM CSS BELOW IF NEEDED */
+
+
+/* =============================== */
+/* SERVERS P&B - COLOR ON HOVER   */
+/* =============================== */
+
+[class*="listItem"] img,
+[class*="icon"] img {
+  filter: grayscale(100%) brightness(0.8);
+  transition: 0.3s ease;
+}
+
+[class*="listItem"]:hover img,
+[class*="selected"] img {
+  filter: grayscale(0%) brightness(1);
+}
+
+
+/* ============================== */
+/*          BLUR NO FUNDO         */
+/* ============================== */
+
+/* ========================= */
+/* GLASS EFFECT - REAL BLUR */
+/* ========================= */
+
+.appMount-2yBXZl {
+  background: transparent !important;
+}
+
+/* Fundo principal */
+.bg-1QIAus,
+.container-1NXEtd,
+.chat-2ZfjoI {
+  background: rgba(15, 15, 15, 0.35) !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+/* Sidebar servidores */
+.wrapper-1_HaEi {
+  background: rgba(10, 10, 10, 0.45) !important;
+  backdrop-filter: blur(25px);
+}
+
+/* Lista de canais */
+.container-1NXEtd {
+  background: rgba(15, 15, 15, 0.4) !important;
+  backdrop-filter: blur(20px);
+}
+
+/* Member list */
+.membersWrap-3NUR2t {
+  background: rgba(15, 15, 15, 0.35) !important;
+  backdrop-filter: blur(20px);
+}
+
+/* Top bar */
+.title-31SJ6t {
+  background: rgba(20, 20, 20, 0.35) !important;
+  backdrop-filter: blur(15px);
+}
+
+.wrapper-1_HaEi,
+.container-1NXEtd,
+.membersWrap-3NUR2t {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ========================= */
+/* FRIENDS P&B EFFECT       */
+/* ========================= */
+
+/* Avatar lista de amigos */
+.peopleColumn-1wMU14 img,
+.avatar-2e8lTP img {
+  filter: grayscale(100%) brightness(0.85);
+  transition: 0.3s ease;
+}
+
+/* Hover volta cor */
+.peopleListItem-u6dGxF:hover img {
+  filter: grayscale(0%) brightness(1);
+}
+
+/* Quando o chat estiver aberto (selecionado) */
+.peopleListItem-u6dGxF.active-2UF8Zh img {
+  filter: grayscale(0%) brightness(1);
+}
+
+/* ========================= */
+/* ATIVIDADES P&B           */
+/* ========================= */
+
+.activity-2EQDZv img,
+.assetsLargeImage-2-KP3t,
+.assetsSmallImage-1DZkMX {
+  filter: grayscale(100%) brightness(0.85);
+  transition: 0.3s ease;
+}
+
+/* Hover atividade */
+.activity-2EQDZv:hover img {
+  filter: grayscale(0%) brightness(1);
+}
+
+/* Se estiver no chat da pessoa */
+.container-1oAagU:hover .assetsLargeImage-2-KP3t {
+  filter: grayscale(0%) brightness(1);
+}
+
+/* ========================= */
+/* AVATARES DMs ESQUERDA    */
+/* ========================= */
+
+[class*="privateChannels"] img,
+[class*="channel"] img,
+[class*="avatar"] img {
+  filter: grayscale(100%) brightness(0.85);
+  transition: 0.3s ease;
+}
+
+/* Hover */
+[class*="privateChannels"] [class*="channel"]:hover img {
+  filter: grayscale(0%) brightness(1);
+}
+
+/* Selecionado */
+[class*="privateChannels"] [class*="selected"] img {
+  filter: grayscale(0%) brightness(1);
+}
+
+
+/* ========================= */
+/* ACTIVE NOW DIREITA       */
+/* ========================= */
+
+[class*="nowPlaying"] img,
+[class*="itemCard"] img,
+[class*="assets"] {
+  filter: grayscale(100%) brightness(0.85);
+  transition: 0.3s ease;
+}
+
+/* Hover atividade */
+[class*="itemCard"]:hover img {
+  filter: grayscale(0%) brightness(1);
+}
+
+/* ============================= */
+/* REMOVE CLEARVISION NAME      */
+/* ============================= */
+
+div.leading_c38106::before {
+  content: "" !important;
+  display: none !important;
+}
+
+div.leading_c38106::after {
+  content: "Brenox Theme v1" !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #989898 !important;
+}
+
+/* ================================= */
+/* RENOMEAR CLEARVISION CORRETAMENTE */
+/* ================================= */
+
+.leading_c38106::before {
+  content: "Brenox Theme" !important;
+}
