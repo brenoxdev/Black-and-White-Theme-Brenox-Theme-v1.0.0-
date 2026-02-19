@@ -1,7 +1,7 @@
 # Brenox Theme
 
 <p align="center">
-  <img src="screenshots/preview.gif" alt="Brenox Theme Preview" width="800"/>
+  <img src="screenshots/discord_theme.png" alt="Brenox Theme Main Preview" width="900"/>
 </p>
 
 A minimal and performance-focused Discord theme built on top of ClearVision V7.
@@ -49,21 +49,11 @@ If transparency does not activate, launch Discord with:
 
 ---
 
-## Screenshots
+## Preview Animation
 
-Place your GIF previews inside:
-
-```
-/screenshots
-```
-
-Example files:
-
-- preview.gif
-- glass-effect.gif
-- grayscale-demo.gif
-
-They will automatically render in the README when referenced.
+<p align="center">
+  <img src="screenshots/preview.gif" alt="Brenox Theme Animated Preview" width="900"/>
+</p>
 
 ---
 
