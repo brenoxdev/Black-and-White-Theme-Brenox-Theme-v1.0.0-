@@ -1,4 +1,4 @@
-# Brenox Theme
+# Black and White Theme (by Brenox)
 
 <p align="center">
   <img src="screenshots/discord_theme.png" alt="Brenox Theme Main Preview" width="900"/>
